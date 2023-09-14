@@ -58,6 +58,7 @@ div button{
     text-transform: UPPERCASE;
     font-weight: 700;
     transition: all 0.2s;
+    cursor: pointer;
 }
 
 .hold{
