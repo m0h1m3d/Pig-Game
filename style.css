@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #A0ECD0;
+}
+
+.player{
+    padding: 40px;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #3A606E;
+    color: #FFFF;
+    border-radius: 20px;
+}
+
+.score-0, .score-1{
+    font-size: 5rem;
+}
+
+.current-0, .current-1{
+    font-size: 1.8rem;
+}
+
+.absolute{
+    height: 80%;
+    width: 10%;
+}
+
+.dice{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 41%;
+    top: 30%;
+}
+
+
+div button{
+    position: absolute;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: transparent;
+    outline: none;
+    left: 41%;
+    text-transform: UPPERCASE;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.hold{
+    top: 80%;
+}
+
+.roll{
+    top: 65%;
+}
+
+.player-active{
+    background: #7696a0;
+}
+
+div button:active{
+    transform: scale(0.9);
+}
+
+.player-winner{
+    background: rgb(126, 233, 126);
+}
+
+.hidden{
+    display: none;
+}
