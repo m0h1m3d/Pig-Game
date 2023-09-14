@@ -33,6 +33,8 @@ function restart (){
     activePlayer = 0;
     score0.textContent = 0;
     score1.textContent = 0;
+    name0.textContent = 'Player1';
+    name1.textContent = 'Player2';
     current0.textContent = 'Current Score';
     current1.textContent = 'Current Score';
     player0.classList.add('player-active');
@@ -68,7 +70,7 @@ btnHold.addEventListener('click', () => {
     scores[`${activePlayer}`] += currentScore;
     document.querySelector(`.score-${activePlayer}`).textContent = scores[`${activePlayer}`];
     }
-    if(scores[`${activePlayer}`] >= 100){
+    if(scores[`${activePlayer}`] >= 10){
         playing = false;
         document.querySelector(`.name-${activePlayer}`).textContent = 'WINNER!';
         document.querySelector(`.player-${activePlayer}`).classList.add('player-winner');
