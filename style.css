@@ -23,14 +23,15 @@ body{
     background: #3A606E;
     color: #FFFF;
     border-radius: 20px;
+    font-size: 2rem;
 }
 
 .score-0, .score-1{
-    font-size: 5rem;
+    font-size: 6rem;
 }
 
 .current-0, .current-1{
-    font-size: 1.8rem;
+    font-size: 2.5rem;
 }
 
 .absolute{
